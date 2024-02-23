@@ -8,6 +8,8 @@ import {
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import { useState } from "react";
+import { GalleryPage } from "./GalleryPage";
+import { Link } from "react-router-dom";
 
 export const RightDrawer = () => {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
@@ -37,8 +39,13 @@ export const RightDrawer = () => {
             Side panel
           </Typography>
           <Stack spacing={3}>
+            <Link to="/">
+              <Button variant="text">Home</Button>
+            </Link>
             <Button variant="text">O nama</Button>
-            <Button variant="text">Galerija</Button>
+            <Link to="/gallery">
+              <Button variant="text">Galerija</Button>
+            </Link>
             <Button variant="text">Cenovnik</Button>
             <Button variant="text">Kontakt</Button>
             <Stack paddingTop={"70px"} alignItems={"center"}>

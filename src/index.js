@@ -5,12 +5,28 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { ThemeProvider } from "@mui/material";
 import { Theme } from "./components/Theme";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { GalleryPage } from "./components/GalleryPage";
+import NotFoundPage from "./components/NotFoundPage";
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <App />,
+    errorElement: <NotFoundPage />,
+  },
+  {
+    path: "/gallery",
+    element: <GalleryPage />,
+  },
+]);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <ThemeProvider theme={Theme}>
-      <App />
+      <RouterProvider router={router} />
+      {/* <App /> */}
     </ThemeProvider>
   </React.StrictMode>
 );

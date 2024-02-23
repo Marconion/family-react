@@ -11,6 +11,7 @@ import {
 import RestaurantMenuIcon from "@mui/icons-material/RestaurantMenu";
 import MenuIcon from "@mui/icons-material/Menu";
 import { RightDrawer } from "./Drawer";
+import { Link } from "react-router-dom";
 
 export const Navbar = () => {
   const StylizedToolbar = styled(Toolbar)({
@@ -39,10 +40,12 @@ export const Navbar = () => {
                 {" "}
                 O nama
               </Button>
-              <Button variant="outlined" color="secondary">
-                {" "}
-                Galerija
-              </Button>
+              <Link to="/gallery">
+                <Button variant="outlined" color="secondary">
+                  {" "}
+                  Galerija
+                </Button>
+              </Link>
               <Button variant="outlined" color="secondary">
                 {" "}
                 Kontakt
