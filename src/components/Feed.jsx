@@ -14,7 +14,7 @@ export const Feed = () => {
 
       <img
         height={"550px"}
-        src="/images/Logo uspravni sa poz.jpeg"
+        src="./images/Logo uspravni sa poz.jpeg"
         alt="logo"
       />
     </Stack>
