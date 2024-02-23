@@ -32,7 +32,9 @@ export const Navbar = () => {
             <Stack
               sx={{
                 display: { xs: "none", sm: "none", md: "block", lg: "block" },
-              }}>
+              }}
+              direction={"row"}
+              spacing={3}>
               <Button variant="outlined" color="secondary">
                 {" "}
                 O nama
