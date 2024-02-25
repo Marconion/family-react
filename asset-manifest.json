@@ -1,15 +1,16 @@
 {
   "files": {
-    "main.css": "/family-react/static/css/main.d5687302.css",
-    "main.js": "/family-react/static/js/main.0354d252.js",
+    "main.css": "/family-react/static/css/main.641cea2e.css",
+    "main.js": "/family-react/static/js/main.3d8ea785.js",
     "static/js/453.f896aca7.chunk.js": "/family-react/static/js/453.f896aca7.chunk.js",
+    "static/media/pexels-golden-jojo-2409038.jpg": "/family-react/static/media/pexels-golden-jojo-2409038.e88a745bc273b6f23d23.jpg",
     "index.html": "/family-react/index.html",
-    "main.d5687302.css.map": "/family-react/static/css/main.d5687302.css.map",
-    "main.0354d252.js.map": "/family-react/static/js/main.0354d252.js.map",
+    "main.641cea2e.css.map": "/family-react/static/css/main.641cea2e.css.map",
+    "main.3d8ea785.js.map": "/family-react/static/js/main.3d8ea785.js.map",
     "453.f896aca7.chunk.js.map": "/family-react/static/js/453.f896aca7.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d5687302.css",
-    "static/js/main.0354d252.js"
+    "static/css/main.641cea2e.css",
+    "static/js/main.3d8ea785.js"
   ]
 }
