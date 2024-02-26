@@ -15,6 +15,7 @@ import { Link } from "react-router-dom";
 
 export const Navbar = () => {
   const StylizedToolbar = styled(Toolbar)({
+    height: "50px",
     display: "flex",
     justifyContent: "space-between",
   });
