@@ -35,8 +35,12 @@ export const RightDrawer = () => {
           setIsDrawerOpen(false);
         }}>
         <Box p={2} width="150px" textAlign="center">
-          <Typography variant="h6" marginBottom={"3rem"}>
-            Side panel
+          <Typography variant="h6" marginBottom={"2rem"}>
+            MENI
+            <img
+              style={{ width: "100%", paddingTop: "20px" }}
+              src="./images/old divider swirl ornate floral.png"
+            />
           </Typography>
           <Stack spacing={3}>
             <Link to="/">
