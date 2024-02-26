@@ -42,14 +42,18 @@ export const RightDrawer = () => {
             <Link to="/">
               <Button variant="text">Home</Button>
             </Link>
-            <Button variant="text">O nama</Button>
+            <Link to="/onama">
+              <Button variant="text">O nama</Button>
+            </Link>
             <Link to="/galerija">
               <Button variant="text">Galerija</Button>
             </Link>
             <Link to="/ponuda">
               <Button variant="text">Ponuda</Button>
             </Link>
-            <Button variant="text">Kontakt</Button>
+            <Link to="/kontakt">
+              <Button variant="text">Kontakt</Button>
+            </Link>
             <Stack paddingTop={"70px"} alignItems={"center"}>
               <img
                 height={"auto"}

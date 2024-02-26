@@ -12,6 +12,8 @@ import {
 } from "react-router-dom";
 import { GalleryPage } from "./components/GalleryPage";
 import { PonudaPage } from "./components/PonudaPage";
+import { Onama } from "./components/Onama";
+import { Kontakt } from "./components/Kontakt";
 // import NotFoundPage from "./components/NotFoundPage";
 
 const router = createHashRouter([
@@ -26,6 +28,14 @@ const router = createHashRouter([
   {
     path: "/ponuda",
     element: <PonudaPage />,
+  },
+  {
+    path: "/onama",
+    element: <Onama />,
+  },
+  {
+    path: "/kontakt",
+    element: <Kontakt />,
   },
   // errorElement: <NotFoundPage />,
 ]);

@@ -1,6 +1,13 @@
 import React from "react";
 import { Navbar } from "./Navbar";
-import { Typography, Stack, ImageList, ImageListItem } from "@mui/material";
+import {
+  Typography,
+  Stack,
+  ImageList,
+  ImageListItem,
+  useMediaQuery,
+} from "@mui/material";
+import { useTheme } from "@mui/material/styles";
 import { Footer } from "./Footer";
 
 export const GalleryPage = () => {
@@ -159,6 +166,10 @@ export const GalleryPage = () => {
     },
   ];
 
+  const theme = useTheme();
+  const isSmallScreen = useMediaQuery(theme.breakpoints.down("sm"));
+  const cols = isSmallScreen ? 2 : 3;
+
   return (
     <div>
       <Navbar />
@@ -174,7 +185,14 @@ export const GalleryPage = () => {
           style={{ width: "100%", padding: "2rem" }}
           src="./images/old divider swirl ornate floral.png"
         />
-        <ImageList variant="quilted" cols={2} gap={8}>
+        <ImageList
+          variant="quilted"
+          cols={cols}
+          gap={8}
+          sx={{
+            display: { md: "flexbox", lg: "flexbox" },
+            margin: { md: "50px", lg: "250px" },
+          }}>
           {itemData.map((item) => (
             <ImageListItem key={item.img}>
               <img

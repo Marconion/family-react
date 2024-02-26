@@ -45,20 +45,30 @@ export const Navbar = () => {
             }}
             direction={"row"}
             spacing={3}>
-            <Button variant="outlined" color="secondary">
-              {" "}
-              O nama
-            </Button>
-            <Link to="/gallery">
+            <Link to="/">
+              <Button variant="outlined" color="secondary">
+                {" "}
+                Home
+              </Button>
+            </Link>
+            <Link to="/onama">
+              <Button variant="outlined" color="secondary">
+                {" "}
+                O nama
+              </Button>
+            </Link>
+            <Link to="/galerija">
               <Button variant="outlined" color="secondary">
                 {" "}
                 Galerija
               </Button>
             </Link>
-            <Button variant="outlined" color="secondary">
-              {" "}
-              Kontakt
-            </Button>
+            <Link to="/kontakt">
+              <Button variant="outlined" color="secondary">
+                {" "}
+                Kontakt
+              </Button>
+            </Link>
           </Stack>
           <RightDrawer />
         </Stack>
