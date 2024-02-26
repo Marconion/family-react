@@ -43,10 +43,12 @@ export const RightDrawer = () => {
               <Button variant="text">Home</Button>
             </Link>
             <Button variant="text">O nama</Button>
-            <Link to="/gallery">
+            <Link to="/galerija">
               <Button variant="text">Galerija</Button>
             </Link>
-            <Button variant="text">Cenovnik</Button>
+            <Link to="/ponuda">
+              <Button variant="text">Ponuda</Button>
+            </Link>
             <Button variant="text">Kontakt</Button>
             <Stack paddingTop={"70px"} alignItems={"center"}>
               <img

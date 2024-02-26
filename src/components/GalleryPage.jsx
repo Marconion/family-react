@@ -1,56 +1,161 @@
 import React from "react";
 import { Navbar } from "./Navbar";
 import { Typography, Stack, ImageList, ImageListItem } from "@mui/material";
+import { Footer } from "./Footer";
 
 export const GalleryPage = () => {
   const itemData = [
     {
-      img: "https://images.unsplash.com/photo-1549388604-817d15aa0110",
-      title: "Bed",
+      img: "./images/gallery-img/Family-1.jpg",
+      title: "img",
     },
     {
-      img: "https://images.unsplash.com/photo-1563298723-dcfebaa392e3",
-      title: "Kitchen",
+      img: "./images/gallery-img/Family-2.jpg",
+      title: "img",
     },
     {
-      img: "https://images.unsplash.com/photo-1523413651479-597eb2da0ad6",
-      title: "Sink",
+      img: "./images/gallery-img/Family-3.jpg",
+      title: "img",
     },
     {
-      img: "https://images.unsplash.com/photo-1525097487452-6278ff080c31",
-      title: "Books",
+      img: "./images/gallery-img/Family-4.jpg",
+      title: "img",
     },
     {
-      img: "https://images.unsplash.com/photo-1574180045827-681f8a1a9622",
-      title: "Chairs",
+      img: "./images/gallery-img/Family-5.jpg",
+      title: "img",
     },
     {
-      img: "https://images.unsplash.com/photo-1597262975002-c5c3b14bbd62",
-      title: "Candle",
+      img: "./images/gallery-img/Family-6.jpg",
+      title: "img",
     },
     {
-      img: "https://images.unsplash.com/photo-1530731141654-5993c3016c77",
-      title: "Laptop",
+      img: "./images/gallery-img/Family-7.jpg",
+      title: "img",
     },
     {
-      img: "https://images.unsplash.com/photo-1481277542470-605612bd2d61",
-      title: "Doors",
+      img: "./images/gallery-img/Family-8.jpg",
+      title: "img",
     },
     {
-      img: "https://images.unsplash.com/photo-1517487881594-2787fef5ebf7",
-      title: "Coffee",
+      img: "./images/gallery-img/Family-9.jpg",
+      title: "img",
     },
     {
-      img: "https://images.unsplash.com/photo-1516455207990-7a41ce80f7ee",
-      title: "Storage",
+      img: "./images/gallery-img/Family-10.jpg",
+      title: "img",
     },
     {
-      img: "https://images.unsplash.com/photo-1519710164239-da123dc03ef4",
-      title: "Coffee table",
+      img: "./images/gallery-img/Family-11.jpg",
+      title: "img",
     },
     {
-      img: "https://images.unsplash.com/photo-1588436706487-9d55d73a39e3",
-      title: "Blinds",
+      img: "./images/gallery-img/Family-12.jpg",
+      title: "img",
+    },
+    {
+      img: "./images/gallery-img/Family-13.jpg",
+      title: "img",
+    },
+    {
+      img: "./images/gallery-img/Family-14.jpg",
+      title: "img",
+    },
+    {
+      img: "./images/gallery-img/Family-15.jpg",
+      title: "img",
+    },
+    {
+      img: "./images/gallery-img/Family-16.jpg",
+      title: "img",
+    },
+    {
+      img: "./images/gallery-img/Family-17.jpg",
+      title: "img",
+    },
+    {
+      img: "./images/gallery-img/Family-18.jpg",
+      title: "img",
+    },
+    {
+      img: "./images/gallery-img/Family-19.jpg",
+      title: "img",
+    },
+    {
+      img: "./images/gallery-img/Family-20.jpg",
+      title: "img",
+    },
+    {
+      img: "./images/gallery-img/Family-21.jpg",
+      title: "img",
+    },
+    {
+      img: "./images/gallery-img/Family-22.jpg",
+      title: "img",
+    },
+    {
+      img: "./images/gallery-img/Family-23.jpg",
+      title: "img",
+    },
+    {
+      img: "./images/gallery-img/Family-24.jpg",
+      title: "img",
+    },
+    {
+      img: "./images/gallery-img/Family-25.jpg",
+      title: "img",
+    },
+    {
+      img: "./images/gallery-img/Family-26.jpg",
+      title: "img",
+    },
+    {
+      img: "./images/gallery-img/Family-27.jpg",
+      title: "img",
+    },
+    {
+      img: "./images/gallery-img/Family-28.jpg",
+      title: "img",
+    },
+    {
+      img: "./images/gallery-img/Family-29.jpg",
+      title: "img",
+    },
+    {
+      img: "./images/gallery-img/Family-30.jpg",
+      title: "img",
+    },
+    {
+      img: "./images/gallery-img/Family-31.jpg",
+      title: "img",
+    },
+    {
+      img: "./images/gallery-img/Family-32.jpg",
+      title: "img",
+    },
+    {
+      img: "./images/gallery-img/Family-33.jpg",
+      title: "img",
+    },
+    {
+      img: "./images/gallery-img/Family-34.jpg",
+      title: "img",
+    },
+    {
+      img: "./images/gallery-img/Family-35.jpg",
+      title: "img",
+    },
+    {
+      img: "./images/gallery-img/Family-36.jpg",
+      title: "img",
+    },
+    {
+      img: "./images/gallery-img/Family-37.jpg",
+      title: "img",
+    },
+    {
+      img: "./images/gallery-img/Family-38.jpg",
+      title: "img",
     },
   ];
 
@@ -58,18 +163,18 @@ export const GalleryPage = () => {
     <div>
       <Navbar />
       <Stack flex={1} alignItems={"center"} m={5}>
-        <img
-          style={{ width: "100vw", padding: "2rem" }}
+        {/* <img
+          style={{ width: "100%", padding: "2rem" }}
           src="./images/old divider swirl ornate floral.png"
-        />
-        <Typography variant="h1" color={"#12372A"}>
+        /> */}
+        <Typography variant="h3" color={"#12372A"}>
           Galerija
         </Typography>
         <img
-          style={{ width: "100vw", padding: "2rem" }}
+          style={{ width: "100%", padding: "2rem" }}
           src="./images/old divider swirl ornate floral.png"
         />
-        <ImageList variant="woven" cols={3} gap={8}>
+        <ImageList variant="quilted" cols={2} gap={8}>
           {itemData.map((item) => (
             <ImageListItem key={item.img}>
               <img
@@ -82,6 +187,7 @@ export const GalleryPage = () => {
           ))}
         </ImageList>
       </Stack>
+      <Footer />
     </div>
   );
 };

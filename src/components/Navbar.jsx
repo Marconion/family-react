@@ -19,42 +19,50 @@ export const Navbar = () => {
     justifyContent: "space-between",
   });
   return (
-    <div>
-      <AppBar position="sticky" sx={{ p: 1 }}>
-        <StylizedToolbar>
-          <Stack direction={"row"} alignItems={"center"}>
-            <RestaurantMenuIcon color="secondary" />
-            <Typography variant="h6" sx={{ color: "#FBFADA", m: 1 }}>
-              Family Event Centar
-            </Typography>
-          </Stack>
+    <AppBar position="sticky" sx={{ p: 1 }}>
+      <StylizedToolbar>
+        <Stack direction={"row"} alignItems={"center"}>
+          {/* <RestaurantMenuIcon color="secondary" /> */}
+          <Link to="/home">
+            <Button>
+              <Box sx={{ marginTop: "10px" }}>
+                <img
+                  style={{ height: "60px" }}
+                  src="./images/Family-logo-gold-white.png"
+                />
+              </Box>
+            </Button>
+          </Link>
+          <Typography variant="h7" sx={{ color: "#FBFADA", m: 1 }}>
+            Family Event Place
+          </Typography>
+        </Stack>
 
-          <Stack direction={"row"} spacing={3} alignItems={"center"}>
-            <Stack
-              sx={{
-                display: { xs: "none", sm: "none", md: "block", lg: "block" },
-              }}
-              direction={"row"}
-              spacing={3}>
+        <Stack direction={"row"} spacing={3} alignItems={"center"}>
+          <Stack
+            sx={{
+              display: { xs: "none", sm: "none", md: "block", lg: "block" },
+            }}
+            direction={"row"}
+            spacing={3}>
+            <Button variant="outlined" color="secondary">
+              {" "}
+              O nama
+            </Button>
+            <Link to="/gallery">
               <Button variant="outlined" color="secondary">
                 {" "}
-                O nama
+                Galerija
               </Button>
-              <Link to="/gallery">
-                <Button variant="outlined" color="secondary">
-                  {" "}
-                  Galerija
-                </Button>
-              </Link>
-              <Button variant="outlined" color="secondary">
-                {" "}
-                Kontakt
-              </Button>
-            </Stack>
-            <RightDrawer />
+            </Link>
+            <Button variant="outlined" color="secondary">
+              {" "}
+              Kontakt
+            </Button>
           </Stack>
-        </StylizedToolbar>
-      </AppBar>
-    </div>
+          <RightDrawer />
+        </Stack>
+      </StylizedToolbar>
+    </AppBar>
   );
 };

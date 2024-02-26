@@ -5,20 +5,29 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { ThemeProvider } from "@mui/material";
 import { Theme } from "./components/Theme";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import {
+  createBrowserRouter,
+  createHashRouter,
+  RouterProvider,
+} from "react-router-dom";
 import { GalleryPage } from "./components/GalleryPage";
-import NotFoundPage from "./components/NotFoundPage";
+import { PonudaPage } from "./components/PonudaPage";
+// import NotFoundPage from "./components/NotFoundPage";
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
-    path: "/",
+    path: "/*",
     element: <App />,
-    errorElement: <NotFoundPage />,
   },
   {
-    path: "/gallery",
+    path: "/galerija",
     element: <GalleryPage />,
   },
+  {
+    path: "/ponuda",
+    element: <PonudaPage />,
+  },
+  // errorElement: <NotFoundPage />,
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
