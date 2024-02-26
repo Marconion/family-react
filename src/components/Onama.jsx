@@ -6,6 +6,7 @@ import {
   ImageList,
   ImageListItem,
   Button,
+  useMediaQuery,
 } from "@mui/material";
 import Card from "@mui/material/Card";
 import CardActions from "@mui/material/CardActions";
@@ -14,12 +15,17 @@ import CardMedia from "@mui/material/CardMedia";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
 import { Footer } from "./Footer";
+import { useTheme } from "@mui/material/styles";
 
 export const Onama = () => {
   useEffect(() => {
     // 👇️ scroll to top on page load
     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
   }, []);
+
+  const theme = useTheme();
+  const isSmallScreen = useMediaQuery(theme.breakpoints.down("lg"));
+  const direction = isSmallScreen ? "column" : "row";
 
   return (
     <div>
@@ -36,7 +42,7 @@ export const Onama = () => {
           style={{ width: "100%", padding: "2rem" }}
           src="./images/old divider swirl ornate floral.png"
         />
-        <Stack spacing={3}>
+        <Stack spacing={3} direction={direction}>
           <Card sx={{ maxWidth: 345 }}>
             <CardMedia
               sx={{ height: 300 }}
