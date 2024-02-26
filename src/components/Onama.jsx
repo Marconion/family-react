@@ -40,7 +40,7 @@ export const Onama = () => {
           <Card sx={{ maxWidth: 345 }}>
             <CardMedia
               sx={{ height: 300 }}
-              image="/images/gallery-img/Family-11.jpg"
+              image="./images/gallery-img/Family-11.jpg"
               title="green iguana"
             />
             <CardContent>
@@ -65,7 +65,7 @@ export const Onama = () => {
           <Card sx={{ maxWidth: 345 }}>
             <CardMedia
               sx={{ height: 300 }}
-              image="/images/gallery-img/Family-31.jpg"
+              image="./images/gallery-img/Family-31.jpg"
               title="green iguana"
             />
             <CardContent>
@@ -87,7 +87,7 @@ export const Onama = () => {
           <Card sx={{ maxWidth: 345 }}>
             <CardMedia
               sx={{ height: 300 }}
-              image="/images/gallery-img/Family-4.jpg"
+              image="./images/gallery-img/Family-4.jpg"
               title="green iguana"
             />
             <CardContent>
