@@ -13,6 +13,7 @@ import { Footer } from "./Footer";
 import ImageModal from "./EnlargeableImage";
 import { Divider } from "./Divider";
 import { ScrollButton } from "./ScrollButton";
+import { useEffect } from "react";
 
 export const GalleryPage = () => {
   const itemData = [
@@ -173,6 +174,10 @@ export const GalleryPage = () => {
   const theme = useTheme();
   const isSmallScreen = useMediaQuery(theme.breakpoints.down("sm"));
   const cols = isSmallScreen ? 2 : 3;
+
+  useEffect(() => {
+    window.scrollTo(0, 0); // Scroll to the top when the component mounts or when the location changes
+  }, []); // This effect runs only once when the component mounts
 
   return (
     <div>
