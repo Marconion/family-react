@@ -9,6 +9,7 @@ import {
 } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
 import { Footer } from "./Footer";
+import ImageModal from "./EnlargeableImage";
 
 export const GalleryPage = () => {
   const itemData = [
@@ -185,6 +186,7 @@ export const GalleryPage = () => {
           style={{ width: "100%", padding: "2rem" }}
           src="./images/old divider swirl ornate floral.png"
         />
+
         <ImageList
           variant="quilted"
           cols={cols}
@@ -195,12 +197,7 @@ export const GalleryPage = () => {
           }}>
           {itemData.map((item) => (
             <ImageListItem key={item.img}>
-              <img
-                srcSet={`${item.img}?w=161&fit=crop&auto=format&dpr=2 2x`}
-                src={`${item.img}?w=161&fit=crop&auto=format`}
-                alt={item.title}
-                loading="lazy"
-              />
+              <ImageModal image={item.img} title={item.title} />
             </ImageListItem>
           ))}
         </ImageList>
