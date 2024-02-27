@@ -79,3 +79,8 @@ footer {
     }
   }
 }
+
+.divider {
+  padding-bottom: 30px;
+  width: 50%;
+}

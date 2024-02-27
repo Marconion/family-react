@@ -1,7 +1,7 @@
 import { Stack } from "@mui/material";
 import React from "react";
 
-export const Divider = () => {
+export const Divider = (className) => {
   return (
     <Stack alignItems={"center"}>
       <img
