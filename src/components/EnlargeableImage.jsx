@@ -5,7 +5,9 @@ import {
   CardActionArea,
   CardMedia,
   Typography,
+  useMediaQuery,
 } from "@mui/material";
+import { useTheme } from "@mui/material/styles";
 
 const ImageModal = ({ image, title }) => {
   const [open, setOpen] = useState(false);
@@ -17,6 +19,10 @@ const ImageModal = ({ image, title }) => {
   const handleClose = () => {
     setOpen(false);
   };
+
+  const theme = useTheme();
+  const isSmallScreen = useMediaQuery(theme.breakpoints.down("lg"));
+  const width = isSmallScreen ? 350 : 550;
 
   return (
     <>
@@ -46,7 +52,7 @@ const ImageModal = ({ image, title }) => {
             top: "50%",
             left: "50%",
             transform: "translate(-50%, -50%)",
-            width: 350,
+            width: 450,
             backgroundColor: "#12372A",
             border: "1px solid #12372A",
             padding: 5,
