@@ -226,7 +226,7 @@ export const GalleryPage = () => {
       <Navbar />
 
       <Stack flex={1} alignItems={"center"} m={5}>
-        <Typography variant="h3" color={"#12372A"}>
+        <Typography variant="h4" color={"#12372A"}>
           Galerija
         </Typography>
         <img

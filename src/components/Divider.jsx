@@ -5,7 +5,7 @@ export const Divider = () => {
   return (
     <Stack alignItems={"center"}>
       <img
-        style={{ width: "100%", padding: "2rem" }}
+        style={{ width: "80%", padding: "2rem" }}
         src="./images/old divider swirl ornate floral.png"
       />
     </Stack>

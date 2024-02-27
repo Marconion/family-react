@@ -36,7 +36,7 @@ export const Onama = () => {
           style={{ width: "100%", padding: "2rem" }}
           src="./images/old divider swirl ornate floral.png"
         /> */}
-        <Typography variant="h3" color={"#12372A"}>
+        <Typography variant="h4" color={"#12372A"}>
           O nama
         </Typography>
         <Divider />
