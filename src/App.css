@@ -82,5 +82,9 @@ footer {
 
 .divider {
   padding-bottom: 30px;
-  width: 50%;
+  width: 80%;
+}
+
+.divider-1 {
+  width: 80%;
 }
