@@ -6,6 +6,10 @@ import { Divider } from "./Divider";
 import "../App.css";
 
 export const Kontakt = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0); // Scroll to the top when the component mounts or when the location changes
+  }, []); // This effect runs only once when the component mounts
+
   return (
     <div>
       <Navbar />
