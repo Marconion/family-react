@@ -1,5 +1,6 @@
 import { Stack, Typography, Box } from "@mui/material";
 import React from "react";
+import { Divider } from "./Divider";
 
 export const Feed = () => {
   return (
@@ -16,6 +17,7 @@ export const Feed = () => {
             Dobrodošli na oficijalnu stranicu
           </Typography>
           {/* <Typography variant="h2">"Family Event Place"</Typography> */}
+          <Divider />
         </Box>
         {/* <img height={"350px"} src="/images/Family logo gold.png" alt="logo" /> */}
         <img
@@ -24,6 +26,7 @@ export const Feed = () => {
           src="./images/Logo uspravni sa poz.jpeg"
           alt="logo"
         />
+        <Divider />
       </Stack>
       <Stack sx={{ color: "secondary" }}>
         <div id="lokacija">

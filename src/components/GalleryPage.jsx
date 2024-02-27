@@ -226,10 +226,6 @@ export const GalleryPage = () => {
       <Navbar />
 
       <Stack flex={1} alignItems={"center"} m={5}>
-        {/* <img
-          style={{ width: "100%", padding: "2rem" }}
-          src="./images/old divider swirl ornate floral.png"
-        /> */}
         <Typography variant="h3" color={"#12372A"}>
           Galerija
         </Typography>
