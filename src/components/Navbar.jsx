@@ -8,8 +8,6 @@ import {
   Typography,
   styled,
 } from "@mui/material";
-import RestaurantMenuIcon from "@mui/icons-material/RestaurantMenu";
-import MenuIcon from "@mui/icons-material/Menu";
 import { RightDrawer } from "./Drawer";
 import { Link } from "react-router-dom";
 
@@ -24,7 +22,7 @@ export const Navbar = () => {
       <StylizedToolbar>
         <Stack direction={"row"} alignItems={"center"}>
           {/* <RestaurantMenuIcon color="secondary" /> */}
-          <Link to="/home">
+          <Link to="/">
             <Button>
               <Box sx={{ marginTop: "10px" }}>
                 <img

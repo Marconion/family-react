@@ -85,6 +85,7 @@ export const PonudaPage = () => {
             <Link to="/ponuda">
               <Button
                 variant="contained"
+                style={{ color: "#FBFADA" }}
                 onClick={() => {
                   window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
                 }}>
@@ -158,6 +159,7 @@ export const PonudaPage = () => {
             <Link to="/ponuda">
               <Button
                 variant="contained"
+                style={{ color: "#FBFADA" }}
                 onClick={() => {
                   window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
                 }}>
@@ -243,6 +245,7 @@ export const PonudaPage = () => {
             <Link to="/ponuda">
               <Button
                 variant="contained"
+                style={{ color: "#FBFADA" }}
                 onClick={() => {
                   window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
                 }}>

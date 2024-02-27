@@ -13,6 +13,7 @@ import { Footer } from "./Footer";
 import ImageModal from "./EnlargeableImage";
 import { useState, useEffect } from "react";
 import { Divider } from "./Divider";
+import { ExpandCircleDown } from "@mui/icons-material";
 
 export const GalleryPage = () => {
   const itemData = [
@@ -203,13 +204,18 @@ export const GalleryPage = () => {
     return (
       <div className="scroll-to-top">
         {isVisible && (
-          <Button
-            onClick={scrollToTop}
-            variant="contained"
-            color="secondary"
-            style={{ position: "fixed", bottom: "60px", right: "60px" }}>
-            Move to top
-          </Button>
+          <Stack alignItems={"center"}>
+            <Button
+              onClick={scrollToTop}
+              variant="contained"
+              color="secondary"
+              style={{ position: "fixed", bottom: "60px", right: "60px" }}>
+              <ExpandCircleDown sx={{ transform: "rotate(180deg)" }} />
+              <Typography variant="h8" marginLeft={1}>
+                Početak
+              </Typography>
+            </Button>
+          </Stack>
         )}
       </div>
     );
