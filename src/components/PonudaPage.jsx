@@ -10,6 +10,7 @@ import {
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
 import { Footer } from "./Footer";
+import { Divider } from "./Divider";
 
 export const PonudaPage = () => {
   useEffect(() => {
@@ -80,11 +81,6 @@ export const PonudaPage = () => {
               <li>Aqua Viva 0.25</li>
             </ul>
           </set-1>
-          <img
-            class="divider"
-            src="img/old divider swirl ornate floral.png"
-            alt=""
-          />
           <div class="button-pos">
             <Link to="/ponuda">
               <Button
@@ -96,6 +92,7 @@ export const PonudaPage = () => {
               </Button>
             </Link>
           </div>
+          <Divider />
           <set-2>
             <h2 class="set-pos">Set meni 2 (38e)</h2>
             <p class="p-3">Ponuda hrane</p>
@@ -157,11 +154,6 @@ export const PonudaPage = () => {
               <li>Vode - Knjaz Miloš 0,25, Aqua Viva 0.25</li>
             </ul>
           </set-2>
-          <img
-            class="divider"
-            src="img/old divider swirl ornate floral.png"
-            alt=""
-          />
           <div class="button-pos">
             <Link to="/ponuda">
               <Button
@@ -172,6 +164,7 @@ export const PonudaPage = () => {
                 Povratak na početak
               </Button>
             </Link>
+            <Divider />
           </div>
           <set-3>
             <h2 class="set-pos">Set meni 3 (50e)</h2>
@@ -256,6 +249,7 @@ export const PonudaPage = () => {
                 Povratak na početak
               </Button>
             </Link>
+            <Divider />
           </div>
         </Typography>
       </Stack>
