@@ -11,9 +11,8 @@ import {
 import { useTheme } from "@mui/material/styles";
 import { Footer } from "./Footer";
 import ImageModal from "./EnlargeableImage";
-import { useState, useEffect } from "react";
 import { Divider } from "./Divider";
-import { ExpandCircleDown } from "@mui/icons-material";
+import { ScrollButton } from "./ScrollButton";
 
 export const GalleryPage = () => {
   const itemData = [
@@ -174,52 +173,6 @@ export const GalleryPage = () => {
   const theme = useTheme();
   const isSmallScreen = useMediaQuery(theme.breakpoints.down("sm"));
   const cols = isSmallScreen ? 2 : 3;
-
-  const ScrollButton = () => {
-    const [isVisible, setIsVisible] = useState(false);
-
-    useEffect(() => {
-      document.addEventListener("scroll", toggleVisibility);
-
-      return () => {
-        document.removeEventListener("scroll", toggleVisibility);
-      };
-    }, []);
-
-    const toggleVisibility = () => {
-      if (window.scrollY > 300) {
-        setIsVisible(true);
-      } else {
-        setIsVisible(false);
-      }
-    };
-
-    const scrollToTop = () => {
-      window.scrollTo({
-        top: 0,
-        behavior: "smooth",
-      });
-    };
-
-    return (
-      <div className="scroll-to-top">
-        {isVisible && (
-          <Stack alignItems={"center"}>
-            <Button
-              onClick={scrollToTop}
-              variant="contained"
-              color="secondary"
-              style={{ position: "fixed", bottom: "60px", right: "60px" }}>
-              <ExpandCircleDown sx={{ transform: "rotate(180deg)" }} />
-              <Typography variant="h8" marginLeft={1}>
-                Početak
-              </Typography>
-            </Button>
-          </Stack>
-        )}
-      </div>
-    );
-  };
 
   return (
     <div>

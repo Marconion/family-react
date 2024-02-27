@@ -15,6 +15,7 @@ import { GalleryPage } from "./components/GalleryPage";
 //     element: <GalleryPage />,
 //   },
 // ]);
+
 function App() {
   return (
     <div style={{ display: "flex", flexDirection: "column" }}>
