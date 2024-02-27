@@ -1,7 +1,8 @@
 body {
   background-color: #fbfada;
 
-  background-image: url("https://www.transparenttextures.com/patterns/diagonal-striped-brick.png");
+  /* background-image: url("https://www.transparenttextures.com/patterns/diagonal-striped-brick.png"); */
+  background-image: url("https://www.transparenttextures.com/patterns/dimension.png");
 }
 
 .img {
