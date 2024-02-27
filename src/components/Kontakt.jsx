@@ -3,6 +3,7 @@ import React from "react";
 import { Footer } from "./Footer";
 import { Navbar } from "./Navbar";
 import { Divider } from "./Divider";
+import { useEffect } from "react";
 import "../App.css";
 
 export const Kontakt = () => {
