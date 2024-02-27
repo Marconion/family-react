@@ -16,6 +16,7 @@ import { Link } from "react-router-dom";
 import { useEffect } from "react";
 import { Footer } from "./Footer";
 import { useTheme } from "@mui/material/styles";
+import { Divider } from "./Divider";
 
 export const Onama = () => {
   useEffect(() => {
@@ -38,10 +39,7 @@ export const Onama = () => {
         <Typography variant="h3" color={"#12372A"}>
           O nama
         </Typography>
-        <img
-          style={{ width: "100%", padding: "2rem" }}
-          src="./images/old divider swirl ornate floral.png"
-        />
+        <Divider />
         <Stack spacing={3} direction={direction}>
           <Card sx={{ maxWidth: 345 }}>
             <CardMedia
@@ -127,6 +125,7 @@ export const Onama = () => {
             </CardActions>
           </Card>
         </Stack>
+        <Divider />
       </Stack>
       <Footer />
     </div>

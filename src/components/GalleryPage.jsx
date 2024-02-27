@@ -12,6 +12,7 @@ import { useTheme } from "@mui/material/styles";
 import { Footer } from "./Footer";
 import ImageModal from "./EnlargeableImage";
 import { useState, useEffect } from "react";
+import { Divider } from "./Divider";
 
 export const GalleryPage = () => {
   const itemData = [
@@ -245,6 +246,7 @@ export const GalleryPage = () => {
             </ImageListItem>
           ))}
         </ImageList>
+        <Divider />
       </Stack>
       <ScrollButton />
       <Footer />
