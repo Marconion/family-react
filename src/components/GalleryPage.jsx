@@ -3,6 +3,7 @@ import { Navbar } from "./Navbar";
 import {
   Typography,
   Stack,
+  Button,
   ImageList,
   ImageListItem,
   useMediaQuery,
@@ -10,6 +11,7 @@ import {
 import { useTheme } from "@mui/material/styles";
 import { Footer } from "./Footer";
 import ImageModal from "./EnlargeableImage";
+import { useState, useEffect } from "react";
 
 export const GalleryPage = () => {
   const itemData = [
@@ -171,9 +173,51 @@ export const GalleryPage = () => {
   const isSmallScreen = useMediaQuery(theme.breakpoints.down("sm"));
   const cols = isSmallScreen ? 2 : 3;
 
+  const ScrollButton = () => {
+    const [isVisible, setIsVisible] = useState(false);
+
+    useEffect(() => {
+      document.addEventListener("scroll", toggleVisibility);
+
+      return () => {
+        document.removeEventListener("scroll", toggleVisibility);
+      };
+    }, []);
+
+    const toggleVisibility = () => {
+      if (window.scrollY > 300) {
+        setIsVisible(true);
+      } else {
+        setIsVisible(false);
+      }
+    };
+
+    const scrollToTop = () => {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    };
+
+    return (
+      <div className="scroll-to-top">
+        {isVisible && (
+          <Button
+            onClick={scrollToTop}
+            variant="contained"
+            color="secondary"
+            style={{ position: "fixed", bottom: "60px", right: "60px" }}>
+            Move to top
+          </Button>
+        )}
+      </div>
+    );
+  };
+
   return (
     <div>
       <Navbar />
+
       <Stack flex={1} alignItems={"center"} m={5}>
         {/* <img
           style={{ width: "100%", padding: "2rem" }}
@@ -202,6 +246,7 @@ export const GalleryPage = () => {
           ))}
         </ImageList>
       </Stack>
+      <ScrollButton />
       <Footer />
     </div>
   );

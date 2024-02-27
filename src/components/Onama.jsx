@@ -50,10 +50,14 @@ export const Onama = () => {
               title="img"
             />
             <CardContent>
-              <Typography gutterBottom variant="h5" component="div">
+              <Typography
+                gutterBottom
+                variant="h5"
+                component="div"
+                color="primary">
                 Velika sala
               </Typography>
-              <Typography variant="body2" color="text.secondary">
+              <Typography variant="body2" color="primary">
                 Na raspolaganju su vam dve moderno opremljene zatvorene sale.
                 Velika sala je kapaciteta do 100 gostiju, a mala sala je
                 kapaciteta do 50 gostiju. Sale su medjusobno povezane sto
@@ -75,10 +79,14 @@ export const Onama = () => {
               title="img"
             />
             <CardContent>
-              <Typography gutterBottom variant="h5" component="div">
+              <Typography
+                gutterBottom
+                variant="h5"
+                component="div"
+                color="primary">
                 Mala sala
               </Typography>
-              <Typography variant="body2" color="text.secondary">
+              <Typography variant="body2" color="primary">
                 Kruna naše ponude je naša zelena oaza, naš vrt, kapaciteta do 50
                 gostiju. Ovaj prostor je potpuno opremljen za hedonističko
                 uživanje sa osećajem bega iz gradske vreve.
@@ -97,10 +105,14 @@ export const Onama = () => {
               title="img"
             />
             <CardContent>
-              <Typography gutterBottom variant="h5" component="div">
+              <Typography
+                gutterBottom
+                variant="h5"
+                component="div"
+                color="primary">
                 Igraonica
               </Typography>
-              <Typography variant="body2" color="text.secondary">
+              <Typography variant="body2" color="primary">
                 Za najmladje i najbitnije goste Family event place je spremio
                 posebno iznenadjenje. Na raspolaganju vam je potpuno opremljena
                 dečija igraonica od 70m2, sa profesionalnim animatorima koji će
