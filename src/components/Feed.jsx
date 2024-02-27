@@ -2,6 +2,7 @@ import { Stack, Typography, Box } from "@mui/material";
 import React from "react";
 import { Divider } from "./Divider";
 import { useEffect } from "react";
+import ImageFadeIn from "./ImageFadeIn";
 
 export const Feed = () => {
   useEffect(() => {
@@ -24,12 +25,13 @@ export const Feed = () => {
           <Divider />
         </Box>
         {/* <img height={"350px"} src="/images/Family logo gold.png" alt="logo" /> */}
-        <img
+        <ImageFadeIn src={"./images/Logo uspravni sa poz.jpeg"} />
+        {/* <img
           className="img"
           height={"550px"}
           src="./images/Logo uspravni sa poz.jpeg"
           alt="logo"
-        />
+        /> */}
         <Divider />
       </Stack>
       <Stack sx={{ color: "secondary" }}>

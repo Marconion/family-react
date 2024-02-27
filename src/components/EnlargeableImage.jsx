@@ -8,6 +8,7 @@ import {
   useMediaQuery,
 } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
+import ImageFadeIn from "./ImageFadeIn";
 
 const ImageModal = ({ image, title }) => {
   const [open, setOpen] = useState(false);
