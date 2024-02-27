@@ -1,8 +1,12 @@
 import { Stack, Typography, Box } from "@mui/material";
 import React from "react";
 import { Divider } from "./Divider";
+import { useEffect } from "react";
 
 export const Feed = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0); // Scroll to the top when the component mounts or when the location changes
+  }, []); // This effect runs only once when the component mounts
   return (
     <div>
       <Stack
