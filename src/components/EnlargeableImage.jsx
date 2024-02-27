@@ -36,7 +36,7 @@ const ImageModal = ({ image, title }) => {
             title={title}
             sx={{
               objectFit: "cover",
-              borderRadius: 4,
+              borderRadius: 0,
             }}
           />
         </CardActionArea>

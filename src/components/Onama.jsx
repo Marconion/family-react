@@ -47,7 +47,7 @@ export const Onama = () => {
             <CardMedia
               sx={{ height: 300 }}
               image="./images/gallery-img/Family-11.jpg"
-              title="green iguana"
+              title="img"
             />
             <CardContent>
               <Typography gutterBottom variant="h5" component="div">
@@ -72,7 +72,7 @@ export const Onama = () => {
             <CardMedia
               sx={{ height: 300 }}
               image="./images/gallery-img/Family-31.jpg"
-              title="green iguana"
+              title="img"
             />
             <CardContent>
               <Typography gutterBottom variant="h5" component="div">
@@ -94,7 +94,7 @@ export const Onama = () => {
             <CardMedia
               sx={{ height: 300 }}
               image="./images/gallery-img/Family-4.jpg"
-              title="green iguana"
+              title="img"
             />
             <CardContent>
               <Typography gutterBottom variant="h5" component="div">
